@@ -1,7 +1,9 @@
+@import 'media.scss';
+
 body{
     font-family: 'Gilroy', Arial, sans-serif;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+    overflow-x: hidden; 
     line-height: 1;
 }
 /* header------------------------------------------------------ */
@@ -188,6 +190,72 @@ input[type="submit"]{
 /* main-------------------------------------------------------------- */
 
 .main {
+    height: 3574px;
+}    
+.main__container{
+    
+
+}   
+
+.records__row{
+    // background-image: url('../img/records/record.jpg');
+    margin-top: 100px;
+    display: inline-flex;
+    height: 261px;
+    &__item{
+        box-shadow: 4px 5px 18px -12px rgba(34, 60, 80, 0.3);
+        flex: 0 1 25%;
+        display: flex;
+        width: 247px;
+        height: 85px;
+        background-color:#fff;
+
+
+    }
+    &__item:not(:last-child){
+        margin-right: 80px;
+    }
 }
-.footer {
+
+
+.records__img {
+    margin-top: 10px;
+    
+
 }
+.records__text {
+    margin-top:10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color:#898989;
+    margin-bottom: 20px;
+    display: block;
+    white-space:nowrap;
+    margin-left: 20px;
+    span{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        color:#3A3A3A
+    }
+    
+
+
+
+}
+
+@media(max-width : 1120px) {
+    .records__row{
+        flex-wrap:wrap;
+        &__item{
+            flex: 0 1 50%;
+            margin-left: 250px;
+            margin-bottom: 25px;
+
+        }
+        
+    }    
+}
+  
+

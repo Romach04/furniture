@@ -1,0 +1,138 @@
+@media(max-width : 1220px){
+    input[type="search"]{
+        width: 200px;
+        height: 45px;
+        padding-left: 0px;
+    
+    }
+
+
+}
+
+@media(max-width : 950px){
+    .icons__header{
+        margin-left: 20px;
+        
+    }
+    .menu__list{
+        gap: 14px;
+    }
+}
+@media(max-width : 800px){
+    .search{
+        display: none;
+    }
+}
+
+@media(max-width : 550px) {
+    .icons__header{
+        flex-direction: column-reverse;
+
+    }
+    
+
+    .cart{
+        margin-left: 0.4em;
+
+    }
+    .heart{
+        margin-left: 0.5em;
+    }
+
+    .header {
+        height: 180px;
+    }
+    
+    
+}
+
+
+
+
+
+@media(max-width : 1220px) {
+    .records__row{
+        flex-wrap:wrap;
+        &__item{
+            flex: 0 1 50%;
+            margin-left: 250px;
+            margin-bottom: 25px;
+
+        }
+        
+    }    
+}
+
+@media(max-width : 800px) {
+    .records__row{
+        justify-content:flex-start;
+        &__item{
+            
+            min-width: 380px;
+            margin-left: 120px;
+            margin-bottom: 25px;
+
+        }
+        
+    }    
+}
+
+@media(max-width : 550px) {
+    .records__row{
+        &__item{
+            margin-left: 80px;
+            min-width: 250px;
+        }
+
+    }
+}
+// product-------------------------
+
+@media(max-width : 1220px) {
+    .product__container{
+        margin-top: 200px;
+
+
+    }
+    .product__row{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:618px) {
+    
+    .product__row{
+        &__item{
+            width: 200px;
+            height: 350px;
+            flex: 0 0 auto;
+            min-width: 200px;
+            justify-content:flex-start;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            
+
+
+        }
+    }
+    .button__cart{
+        &>button{
+            width: 100px;
+            height: 48px;
+
+        }
+        
+    }
+     
+}
+@media (max-width: 450px) {
+    .product__row{
+        min-height: auto;
+       
+    }
+    
+
+    
+}

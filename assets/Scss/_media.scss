@@ -129,9 +129,14 @@
 }
 @media (max-width: 450px) {
     .product__row{
-        min-height: auto;
+        max-height: auto;
        
     }
+    .product__row__item{
+        margin-top: 10px;
+    }
+   
+    
     
 
     

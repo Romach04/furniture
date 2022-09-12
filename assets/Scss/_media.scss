@@ -141,3 +141,10 @@
 
     
 }
+// Slider------------------------------------------------
+
+@media (max-width: 1230px) {
+    .slider__row__item:first-child{
+        display: none;
+    }
+}

@@ -243,10 +243,7 @@
     margin-top: 88px;
 }
 
-.slider__content{
-    background-color:#FCF8F3
 
-}
 
 
 
@@ -305,19 +302,38 @@
 .indecator img{
     padding-left: 16px
 }
-.prev{
-    position:absolute;
-    top:161px;
-    left: -40px;
+.slick-arrow{
     z-index: 10;
-    cursor: pointer;
+    width: 50px;
+    height: 50px;
 }
-.next{
+.slick-prev{
     position: absolute;
-    left: 1200px;
-    top:161px;
-    cursor: pointer;
+    left: -25px;
+    color: #00569C;
 }
+
+.slick-next{
+    position: absolute;
+    right: 0;
+    color: #00569C;
+}
+// .prev{
+//     position:absolute;
+//     top:161px;
+//     left: -40px;
+//     z-index: 10;
+//     cursor: pointer;
+// }
+// .next{
+//     position: absolute;
+//     left: 1200px;
+//     top:161px;
+//     cursor: pointer;
+// }
+// .disnon{
+//     display: none;
+// }
 
 // .footer{
 //     width: 1200px;

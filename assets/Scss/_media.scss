@@ -143,8 +143,13 @@
 }
 // Slider------------------------------------------------
 
-@media (max-width: 1230px) {
-    .slider__row__item:first-child{
-        display: none;
+@media (max-width: 970px) {
+    .footer__row{
+        flex-wrap:wrap;
+
+    }
+    .footer__item{
+        flex: 0 1 50%;
+
     }
 }

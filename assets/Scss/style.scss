@@ -6,9 +6,7 @@
 
 /* main-------------------------------------------------------------- */
 
-.main {
-    height: 3574px;
-}    
+   
 .main__container{
     
 
@@ -288,7 +286,7 @@
     height: 370px;
     margin-top: 32px;
     img{
-        width: 391px;
+        width: 381px;
         height: 251px;
     }
     &:hover{
@@ -318,6 +316,206 @@
     right: 0;
     color: #00569C;
 }
+// ----------------accordion
+.accordin__content{
+    margin-top: 150px;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+}
+.accordion__item {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15)
+  }
+
+  .accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #4f8fed;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+  }
+
+  .accordion__header::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    content: "";
+  }
+
+  .accordion__item_show .accordion__header::after {
+    transform: rotate(-180deg);
+  }
+
+  .accordion__header:hover {
+    background-color: #0b5ed7;
+  }
+
+  .accordion__item_hidden .accordion__header {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .accordion__body {
+    padding: 0.75rem 1rem;
+    overflow: hidden;
+    background: #fff;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+  }
+
+
+//   footer----------------------------------------
+.line{
+    width: auto;
+    &:after{
+        content: '';
+        display: block;
+        height: 1px;
+        background-color:#D8D8D8
+
+    }
+    
+
+   
+}
+input[type="email"]{
+    width: 242px;
+    height: 45px;
+    border:none;
+    background-color:#F4F5F7;
+}
+
+.footer-enter{
+    display: flex;
+}
+
+.footer{
+    &__item{
+        p{
+            
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #616161;
+        }
+        h2{
+            font-weight: 700;
+            font-size: 24px;
+            color: #000;
+            
+        }
+        p:first-child{
+            margin-top: 16px;
+
+        }
+        button{
+            cursor: pointer;
+            width: 46px;
+            height: 45px;
+            border:none;
+            background-color:#E89F71;
+        }
+        
+
+        
+        a{
+            color:  #616161;
+            display: block;
+            position: relative;
+            text-decoration: none;
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: -3px;
+                width: 0;
+                height: 2px;
+                background-color:black;
+                transition: width 0.2s;
+    
+            }
+            &:hover:after{
+                content: '';
+                width: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                height: 2px;
+                background-color:black;
+                transition: width 0.2s;
+    
+            }
+
+        }
+        cursor: pointer;
+        max-width: 250px;
+        ;
+;
+        
+    }
+    margin-top: 183px;
+}
+
+.footer__row{
+    margin-top: 80px;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // .prev{
 //     position:absolute;
 //     top:161px;

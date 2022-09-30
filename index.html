@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/font/Gilroy/stylesheet.css" type = "text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
@@ -14,14 +15,14 @@
 <body>
 
      <div class="wrapper">
-        <div class="header">
+        <header class="header" id="header">
             <div class="header__container">
                 <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#">Funiro.</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Products</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Rooms</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Inspirations</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#header">Funiro.</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#product">Products</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#slider">Rooms</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#footer">About us</a></li>
                     </ul>
                     
 
@@ -56,7 +57,7 @@
                 
             </div>
             
-        </div>
+        </header>
         <main class="main">
             <div class="main__container">
                 <div class="records__row">
@@ -122,7 +123,7 @@
                 
             </div>
 
-            <div class="product__container">
+            <div class="product__container" id="product">
                 <div class="product__title">
                     <h2>Our Product</h2>
                 </div>
@@ -273,7 +274,7 @@
 
 
 
-                 <div class="slider__container ">
+                 <div class="slider__container" id="slider">
                     <div class="slider__title">
                         <h2>Tips & Tricks</h2>
                     </div>
@@ -361,11 +362,9 @@
             </div>
             
         
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>           
-        <script src="assets/slick/slick.min.js"></script>
-        <script src="js/script.js"></script>
+        
         </main>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             
             
             <div class="footer__container">
@@ -425,6 +424,19 @@
                 
             </div>
         </footer>
+        <a href="#header" class="pageup">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <path style="fill:#E89F71" d="M512,256.001C512,114.615,397.385,0,256.001,0S0,114.615,0,256.001S114.615,512,255.999,512
+                S512,397.385,512,256.001z"/>
+                <path style="opacity:0.1;enable-background:new    ;" d="M68.872,256.001c0-129.706,96.466-236.866,221.563-253.688
+                C279.171,0.798,267.679,0,255.999,0C114.615,0,0,114.615,0,256.001S114.615,512,255.999,512c11.68,0,23.172-0.798,34.436-2.313
+                C165.338,492.865,68.872,385.705,68.872,256.001z"/>
+                <polygon style="fill:#FFFFFF;" points="213.144,391.199 213.144,290.091 153.879,290.091 256.001,114.809 358.121,290.091 
+                298.856,290.091 298.856,391.199 "/>
+            </svg>
+            
+        </a>
      </div>
     
 
@@ -434,11 +446,11 @@
 
 
 
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"> </script>           
+    <script src="assets/slick/slick.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"> </script>
+    <script src="./dist/bundle.js"> </script>
     
 </body>
 </html>

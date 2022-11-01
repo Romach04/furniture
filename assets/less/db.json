@@ -1,0 +1,24 @@
+{
+  "card": [
+      {
+          "src": "../assets/img/product/image 1.png",
+          "title": "Syltherine",
+          "text": "Stylish cafe chair",
+          "prise": "2.500.000"
+      },
+      {
+          "src": "assets/img/styles-6.jpg",
+          "title": "Leviosa ",
+          "text": "Stylish cafe chair",
+          "prise": "300.000"
+      },
+      {
+          "src": "assets/img/styles-7.png",
+          "title": "Lolito",
+          "text": "Luxury big sofa",
+          "prise": "1.600.000"
+      }
+      
+  ]
+}
+

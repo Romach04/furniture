@@ -19,6 +19,16 @@ eval("const accordion = (triggersSelector) => {\r\n    const btns = document.que
 
 /***/ }),
 
+/***/ "./src/js/modules/moreCards.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/moreCards.js ***!
+  \*************************************/
+/***/ ((module) => {
+
+eval("\r\n\r\n\r\n\r\nconst moreCards = (select, wrap) => {\r\n\r\n    \r\n    const getResource = async (url) => {\r\n        let res = await fetch(url);\r\n\r\n        if (!res.ok) {\r\n            throw new Error(`fetch ${url}, status: ${res.status}`);\r\n        }\r\n\r\n        return await res.json();\r\n    };\r\n\r\n\r\n\r\n    \r\n\r\n    const btn = document.querySelector(select);\r\n\r\n    btn.addEventListener('click', function() {\r\n        getResource('http://localhost:3000/card')\r\n            .then(res => createCard(res.card))\r\n            .catch(error =>console.log(error));\r\n\r\n        this.remove();  \r\n    });\r\n\r\n\r\n\r\n    function createCard(response) {\r\n        response.forEach(({src, prise, text, title})  => {\r\n            let card = document.createElement('div');\r\n\r\n\r\n            card.classList.add('animated', 'fadeInUp','product__row__item');\r\n\r\n            card.innerHTML = `\r\n                <img src=${src} alt=\"product\">\r\n                <div class=\"product__item__title\">\r\n                    <h3${title}</h3>\r\n                </div>\r\n                <div class=\"product__item__text\">\r\n                    ${text}\r\n                </div>\r\n                <div class=\"new__item__prise\">\r\n                    ${prise}\r\n                </div>\r\n            \r\n\r\n\r\n            \r\n            `;\r\n\r\n            document.querySelector(wrap).apeendChild(card);\r\n        });\r\n\r\n\r\n    }\r\n\r\n};\r\n\r\n\r\nmodule.exports = moreCards;\n\n//# sourceURL=webpack://webpack-demo/./src/js/modules/moreCards.js?");
+
+/***/ }),
+
 /***/ "./src/js/modules/scrolling.js":
 /*!*************************************!*\
   !*** ./src/js/modules/scrolling.js ***!
@@ -45,7 +55,7 @@ eval("function slider(){\r\n    $('.slider__row').slick({\r\n        infinite: t
   \**************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n    const slider = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\r\n    const scrolling = __webpack_require__(/*! ./modules/scrolling */ \"./src/js/modules/scrolling.js\");\r\n    const accordion =  __webpack_require__(/*! ./modules/accordion */ \"./src/js/modules/accordion.js\");\r\n    slider();\r\n    scrolling('.pageup');\r\n    accordion('.accordion__item');\r\n});\n\n//# sourceURL=webpack://webpack-demo/./src/js/script.js?");
+eval("\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n    const slider = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\r\n    const scrolling = __webpack_require__(/*! ./modules/scrolling */ \"./src/js/modules/scrolling.js\");\r\n    const accordion =  __webpack_require__(/*! ./modules/accordion */ \"./src/js/modules/accordion.js\");\r\n    const moreCards = __webpack_require__(/*! ./modules/moreCards */ \"./src/js/modules/moreCards.js\");\r\n    slider();\r\n    scrolling('.pageup');\r\n    accordion('.accordion__item');\r\n    moreCards('.show__more', '.product__row');\r\n});\n\n//# sourceURL=webpack://webpack-demo/./src/js/script.js?");
 
 /***/ })
 

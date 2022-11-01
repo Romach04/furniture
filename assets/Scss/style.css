@@ -251,6 +251,13 @@ input[type=submit] {
   font-weight: 600;
   font-size: 20px;
 }
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
+}
+
+.accordion__item:last-child{
+  margin-top: 50px;
+}
 
 .old__item__prise {
   text-decoration: line-through;
@@ -409,7 +416,7 @@ input[type=submit] {
 }
 
 .accordion__header:hover {
-  background-color: #0b5ed7;
+  background-color: #e7915b;
 }
 
 .accordion__item_hidden .accordion__header {
@@ -430,6 +437,7 @@ input[type=submit] {
 }
 
 .pageup {
+  opacity: 0;
   width: 35px;
   height: 35px;
   position: fixed;

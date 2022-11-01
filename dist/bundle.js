@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/modules/accordion.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/accordion.js ***!
+  \*************************************/
+/***/ ((module) => {
+
+eval("const accordion = (triggersSelector) => {\r\n    const btns = document.querySelectorAll(triggersSelector);\r\n\r\n\r\n\r\n    btns.forEach(btn => {\r\n        btn.addEventListener('click', function() {\r\n            if(!this.classList.contains('accordion__item')){\r\n                return;\r\n            }\r\n\r\n            if(this.classList.contains('accordion__item')){\r\n\r\n                if(this.classList.contains('accordion__item_show')){ //yes\r\n                    this.classList.remove('accordion__item_show');\r\n                    this.classList.remove('animated', 'fadeIn');\r\n\r\n                } else {\r\n                    this.classList.add('animated', 'fadeIn');\r\n                    this.classList.add('accordion__item_show');\r\n\r\n                }\r\n\r\n                \r\n                // this.classList.add('animated', 'fadeInDown');\r\n\r\n                // this.classList.add('accordion__item_show');\r\n\r\n            }\r\n\r\n            // this.classList.toggle('accordion__item_show');\r\n\r\n        });\r\n});\r\n};\r\n\r\nmodule.exports = accordion;\n\n//# sourceURL=webpack://webpack-demo/./src/js/modules/accordion.js?");
+
+/***/ }),
+
 /***/ "./src/js/modules/scrolling.js":
 /*!*************************************!*\
   !*** ./src/js/modules/scrolling.js ***!
@@ -35,7 +45,7 @@ eval("function slider(){\r\n    $('.slider__row').slick({\r\n        infinite: t
   \**************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n    const slider = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\r\n    const scrolling = __webpack_require__(/*! ./modules/scrolling */ \"./src/js/modules/scrolling.js\");\r\n    slider();\r\n    scrolling('.pageup');\r\n});\n\n//# sourceURL=webpack://webpack-demo/./src/js/script.js?");
+eval("\r\n\r\nwindow.addEventListener('DOMContentLoaded', () => {\r\n    const slider = __webpack_require__(/*! ./modules/slider */ \"./src/js/modules/slider.js\");\r\n    const scrolling = __webpack_require__(/*! ./modules/scrolling */ \"./src/js/modules/scrolling.js\");\r\n    const accordion =  __webpack_require__(/*! ./modules/accordion */ \"./src/js/modules/accordion.js\");\r\n    slider();\r\n    scrolling('.pageup');\r\n    accordion('.accordion__item');\r\n});\n\n//# sourceURL=webpack://webpack-demo/./src/js/script.js?");
 
 /***/ })
 

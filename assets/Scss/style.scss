@@ -360,7 +360,7 @@
   }
 
   .accordion__header:hover {
-    background-color: #0b5ed7;
+    background-color: #e7915b;
   }
 
   .accordion__item_hidden .accordion__header {
@@ -376,11 +376,20 @@
     border-bottom-left-radius: 0.25rem;
   }
 
+  .accordion_content_show{
+    overflow: visible;
+
+  }
+  .accordion__item:nth-child(){
+    margin-top: 50px;
+  }
+
   .accordion__item:not(.accordion__item_show) .accordion__body {
     display: none;
   }
 
 .pageup{
+    opacity: 0;
     width: 35px;
     height: 35px;
     position: fixed;
